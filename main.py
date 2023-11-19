@@ -1,8 +1,6 @@
-n = int(input())
-k = int(input())-1
-people = list(range(1,n+1))
-while len(people) !=1:
-    k = k % len(people)
-    del people[k]
-    k += 2
-print(people)
+text = "пример для подсчета гласных букв"
+f = 0
+for i in text:
+    if i == 'а' or i == 'е' or i == 'и' or i == 'о' or i =='ы' or i == 'у' or i == 'я':
+        f += 1
+print(f)
